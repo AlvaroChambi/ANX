@@ -13,6 +13,7 @@
   <scripts name="scripts">
     <scripts name="entities">
       <script>scripts\entity_select_state_update.gml</script>
+      <script>scripts\init_tentacle.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -22,10 +23,17 @@
       <object>objects\main_room_manager</object>
     </objects>
     <object>objects\entities_controller</object>
+    <object>objects\triangle</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_room</room>
   </rooms>
+  <constants number="4">
+    <constant name="FORWARD_DIRECTION">1</constant>
+    <constant name="BACKWARDS_DIRECTION">-1</constant>
+    <constant name="TENTACLE_FACING_RIGHT">1</constant>
+    <constant name="TENTACLE_FACING_LEFT">-1</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
